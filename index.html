@@ -70,12 +70,47 @@ hr {
   border-bottom: none;
   margin-bottom: 0;
 }
+
+/* Wider page layout */
+.container {
+  max-width: 1400px !important;
+  width: 75% !important;
+}
+
+/* Circular profile image */
+.avatar {
+  border-radius: 50% !important;
+  width: 245px;
+  height: 245px;
+  object-fit: cover;
+  object-position: center 20%; /* Adjusts vertical position - moves image up */
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 </style>
 
 <!-- <div class="jumbotron"> -->
 <div class="row marketing">
 	<div class="col-sm-4" style="margin-top: 65px;">
-	<img  class="img-circle avatar" alt="Jonathan McGlone" src="img/hous_small.png">
+	<img  class="img-circle avatar" alt="Houston Claure" src="img/houston_sm.JPG">
+	
+	<!-- Contact icons positioned under the profile image -->
+	<div style="margin-top: 20px; text-align: center;">
+		<a href="img/CV_2024.pdf" download>
+		  <img src="img/download.png" alt="Download Resume" class="another-icon" style="width: 35px; height: 35px; margin: 0 3px;">
+		</a>
+
+		<a href="https://www.linkedin.com/in/houston-claure-33793771/" target="_blank">
+			<img src="img/linkedin.png" alt="LinkedIn" class="another-icon" style="width: 35px; height: 35px; margin: 0 3px;">
+		  </a>
+
+		<a href="https://scholar.google.com/citations?user=KgPQqs4AAAAJ&hl=en" target="_blank">
+			<img src="img/google.png" alt="Google Scholar" class="another-icon" style="width: 35px; height: 35px; margin: 0 3px;">
+		  </a>
+		  <a href="mailto:Houston.claure@yale.edu" target="_blank">
+			<img src="img/email.png" alt="Email" class="another-icon" style="width: 35px; height: 35px; margin: 0 3px;">
+		  </a>
+	</div>
 	</div>
 	<div itemscope itemtype="http://data-vocabulary.org/Person" class="col-sm-8">
 	<p class="lead">Welcome! </p>
@@ -90,7 +125,7 @@ hr {
 		<span itemprop="title">artificial intelligence (AI)</span>. 
 		I focus on value alignment, developing computational methods and experimental platforms that enable 
 		agents and robots to infer, represent, and act on human expectations and norms in collaborative settings. 
-		My goal is to create systems that 
+		My goal is to create robots and agents that 
 		adapt to human expectations and support effective, trustworthy teamwork.
 	  </p>
 	      <p>I received my <span itemprop="title">Ph.D.</span> from <span itemprop="title">Cornell University</span> in the Sibley School of <span itemprop="title">Mechanical and Aerospace Engineering</span>. I was advised by <a href="https://mjung.infosci.cornell.edu/">Dr. Malte Jung</a> and worked in the <a href="https://sites.coecis.cornell.edu/riglab/"> Robots in Groups Lab</a>. I was also the founder of Vida, a company that uses artificial intelligence to create solutions that support teachers struggling with remote teaching during the COVID-19 lockdown. Our proposal for Vida was funded by the National Science Foundation (NSF) I-Corp grant. </p> 
@@ -101,29 +136,6 @@ hr {
 	
 	<p>I'm also available for hire as a <span itemprop="title">freelance web developer, designer, or consultant</span>. <a href="contact">Drop me a line</a> about your project if you're interested in working with me. I am also interested in the design of robotic systems capable of thriving in spaces inhabited by humans. </p> -->
 	</div>
-	<div class="col-sm-4" style="margin-top: 2px;">
-		<a href="img/CV_2024.pdf" download>
-		  <img src="img/download.png" alt="Download Resume" class="another-icon" style="width: 45px; height: 45px;">
-		</a>
-
-		<a href="https://www.linkedin.com/in/houston-claure-33793771/" target="_blank">
-			<img src="img/linkedin.png" alt="Another Icon" class="another-icon" style="width: 45px; height: 45px;">
-		  </a>
-
-
-
-		  <a href="https://scholar.google.com/citations?user=KgPQqs4AAAAJ&hl=en" target="_blank">
-			<img src="img/google.png" alt="Another Icon" class="another-icon" style="width: 45px; height: 45px;">
-		  </a>
-		  <a href="mailto:Houston.claure@yale.edu" target="_blank">
-			<img src="img/email.png" alt="Email Icon" class="another-icon" style="width: 45px; height: 45px;">
-		  </a>
-		 
-
-
-
-
-	  </div>
 	</div>
 
 	<hr>
@@ -133,46 +145,64 @@ hr {
     <ul class="list-unstyled">
 
 		<li>
-			<a href="https://tsl.mit.edu"></a> (February 2023) Starting a postdoc with the <a>Interactive Machines Group (IMG)</a>!
+			(August 2025) Presenting our paper at <a href="//www.ro-man2025.org/">IEEE RO-MAN</a> in Eindhoven, Netherlands.
 		  </li>
 		<li>
-			<a href="https://tsl.mit.edu"></a> (Janaury 2023) Defended my thesis!
+			(July 2025) Selected to participate Brown University's CNTR <a href="https://cntr.brown.edu/summer-school"> Policy Summer School</a>. We interacted with think tanks and I spoke with staffers from various offices on Capitol Hill around topics of AI safety.
+		  </li>
+		<li>
+			(May 2025) Selected to give a talk and participate on a panel at <a href = "https://ai.yale.edu/symposium-2025">Envisioning AI at Yale</a>.
+		  </li>
+		<li>
+			(December 2024)  <a href="https://humanrobotinteraction.org/2025/">HRI paper</a> accepted, will be presenting in Australia!
+		  </li>
+		<li>
+			(August 2024) Selected to participate in the <a href="https://nextprof.engin.umich.edu/nextprof-nexus/">NextProf Nexus</a> at the University of Michigan.
+		  </li>
+		<li>
+			(February 2024) Selected as an early career pioneer in the field and participated in the <a href="https://sites.google.com/view/rsspioneers2024/home?authuser=0">Robotics: Science and Systems (RSS) Pioneers Workshop</a>.
+		  </li>
+		<li>
+			(February 2023) Starting a postdoc with the <a href="https://interactive-machines.gitlab.io">Interactive Machines Group (IMG)</a>!
+		  </li>
+		<li>
+			(January 2023) Defended my thesis!
 		  </li>
     
 		<li>
-			<a href="https://tsl.mit.edu"></a> (August 2022) Had a great time visiting Yale and the <a>Interactive Machines Group (IMG)</a>. Gave a talk to the robotics labs at Yale.
+			(August 2022) Had a great time visiting Yale and the <a href="https://interactive-machines.gitlab.io">Interactive Machines Group (IMG)</a>. Gave a talk to the robotics labs at Yale.
 		  </li>
 		<li>
-			<a href="https://tsl.mit.edu"></a> (June 2022) Had a great time visiting MIT and giving a talk to the <a>MIT Teaching Systems Lab</a>.
+			(June 2022) Had a great time visiting MIT and giving a talk to the <a href="https://tsl.mit.edu">MIT Teaching Systems Lab</a>.
 		  </li>
       <li>
-        <a href="https://workshophrifair.wixsite.com/fair-transparency"></a> (March 2022) Organized a successful workshop at HRI 2022. We had some amazing industry speakers (Google Research, Microsoft Research) and academics (UPenn, USC). Check out our <a> website</a>.
+        (March 2022) Organized a successful workshop at HRI 2022. We had some amazing industry speakers (Google Research, Microsoft Research) and academics (UPenn, USC). Check out our <a href="https://workshophrifair.wixsite.com/fair-transparency">website</a>.
       </li>
 	  <li>
-        <a href="https://humanrobotinteraction.org/2022/"></a> (November 2021) Excited to announce that I will be leading a workshop on Fairness and Transparency in Human Robot Interaction at the <a>HRI 2022 Conference</a>. Stay tuned for more details!
+        (November 2021) Excited to announce that I will be leading a workshop on Fairness and Transparency in Human Robot Interaction at the <a href="https://humanrobotinteraction.org/2022/">HRI 2022 Conference</a>. Stay tuned for more details!
       </li>
 	  <li>
-        <a href="https://www.rit.edu/diversity/sites/rit.edu.diversity/files/2021FFCEPBooklet.pdf"></a> (September  2021) Gave a research talk at the Rochester Institute of Technology (RIT) as part of the <a>Future Faculty Program</a>!
+        (September  2021) Gave a research talk at the Rochester Institute of Technology (RIT) as part of the <a href="https://www.rit.edu/diversity/sites/rit.edu.diversity/files/2021FFCEPBooklet.pdf">Future Faculty Program</a>!
       </li>
 	  <li>
-        <a href="https://www.tri.global"></a> (June  2021) Excited to start my internship with the <a>Toyota Research Institute</a>!
+        (June  2021) Excited to start my internship with the <a href="https://www.tri.global">Toyota Research Institute</a>!
 		
       </li>
 
 	  <li>
-        <a href="https://hripioneers.org/archives/hri21/program"></a> (February  2021) I was selected as a pioneer within my field and will present my work at the <a>16th annual Human-Robot Interaction Pioneers Workshop</a>.
+        (February  2021) I was selected as a pioneer within my field and will present my work at the <a href="https://hripioneers.org/archives/hri21/program">16th annual Human-Robot Interaction Pioneers Workshop</a>.
 		
       </li>
 	  <li>
-        <a href="https://gsas.yale.edu/diversity/office-graduate-student-development-diversity/edward-bouchet-conference"></a> (February  2021) Excited to be inducted into the <a>Edward Alex Bouchet Graduate Honor Society</a>!
+        (February  2021) Excited to be inducted into the <a href="https://gsas.yale.edu/diversity/office-graduate-student-development-diversity/edward-bouchet-conference">Edward Alex Bouchet Graduate Honor Society</a>!
 		
       </li>
 	  <li>
-        <a href="https://gradschool.cornell.edu/diversity-inclusion/signature-initiatives/nextgen-professors-program/"></a> (December  2020) I will be participating in Cornell's <a>NextGen Professors program</a>.
+        (December  2020) I will be participating in Cornell's <a href="https://gradschool.cornell.edu/diversity-inclusion/signature-initiatives/nextgen-professors-program/">NextGen Professors program</a>.
 		
       </li>
 	  <li>
-        <a href="https://new.nsf.gov/funding/initiatives/i-corps"></a> (October  2020) I was selected to participate in the <a>NSF I-Corp Program</a>.
+        (October  2020) I was selected to participate in the <a href="https://new.nsf.gov/funding/initiatives/i-corps">NSF I-Corp Program</a>.
 		
       </li>
     </ul>
