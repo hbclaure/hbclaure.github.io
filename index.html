@@ -103,6 +103,26 @@ hr {
   .col-sm-12 {
     text-align: center;
   }
+  
+  /* Ensure proper spacing when stacked */
+  .row.marketing > div {
+    margin-bottom: 30px;
+  }
+  
+  /* Force full width on mobile to prevent overlap */
+  .row.marketing .col-lg-4,
+  .row.marketing .col-md-5 {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+  }
+  
+  .row.marketing .col-lg-8,
+  .row.marketing .col-md-7 {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -115,9 +135,16 @@ hr {
     width: 98% !important;
   }
   
-  /* Ensure proper spacing when stacked */
-  .row.marketing > div {
-    margin-bottom: 30px;
+  /* Smaller image on very small screens */
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Ensure icons stay centered on mobile */
+  .icon-container {
+    margin-left: 0 !important;
+    justify-content: center !important;
   }
 }
 </style>
@@ -128,7 +155,7 @@ hr {
 	<img  class="img-circle avatar" alt="Houston Claure" src="img/houston_sm.JPG">
 	
 	<!-- Contact icons positioned under the profile image -->
-	<div style="margin-top: 20px; text-align: center; display: flex; justify-content: center; align-items: center; margin-left: -25px;">
+	<div class="icon-container" style="margin-top: 20px; text-align: center; display: flex; justify-content: center; align-items: center;">
 		<a href="https://www.linkedin.com/in/houston-claure-33793771/" target="_blank">
 			<img src="img/linkedin.png" alt="LinkedIn" class="another-icon" style="width: 35px; height: 35px; margin: 0 3px;">
 		  </a>
