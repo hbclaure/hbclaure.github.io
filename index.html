@@ -72,23 +72,46 @@ hr {
 }
 
 /* Wider page layout */
-/* .container {
-  max-width: 900px !important;
+.container {
+  max-width: 1000px !important;
   width: 75% !important;
-} */
+}
 
 /* Circular profile image */
 .avatar {
   border-radius: 50% !important;
-  width: 230px;
-  height: 230px;
+  width: 235px;
+  height: 235px;
   object-fit: cover;
   object-position: 35% 20%; /* Adjusts horizontal position (60% from left) and vertical position */
   border: 3px solid #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Profile image container - ensure centering at all screen sizes */
+.profile-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Responsive design for smaller screens */
+@media (max-width: 991px) {
+  /* Center the image container when it stacks on medium screens and below */
+  .profile-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .avatar {
     width: 200px;
@@ -99,9 +122,12 @@ hr {
     width: 95% !important;
   }
   
-  /* Center the image on smaller screens */
-  .col-sm-12 {
+  /* Ensure the profile container is centered */
+  .profile-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -119,12 +145,19 @@ hr {
   .row.marketing > div {
     margin-bottom: 30px;
   }
+  
+  .profile-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>
 
 <!-- <div class="jumbotron"> -->
 <div class="row marketing">
-	<div class="col-lg-4 col-md-5 col-sm-12" style="margin-top: 65px;">
+	<div class="col-lg-4 col-md-5 col-sm-12 profile-container" style="margin-top: 65px;">
 	<img  class="img-circle avatar" alt="Houston Claure" src="img/houston_sm.JPG">
 	
 	<!-- Contact icons positioned under the profile image -->
